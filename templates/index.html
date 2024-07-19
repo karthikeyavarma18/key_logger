@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger Control</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Keylogger Control</h1>
+        <form action="/start" method="post">
+            <button type="submit">Start Keylogger</button>
+        </form>
+        <form action="/stop" method="post">
+            <button type="submit">Stop Keylogger</button>
+        </form>
+        <div class="log-output">
+            <h2>Logged Text:</h2>
+            <pre>{{ logged_text }}</pre>
+        </div>
+    </div>
+</body>
+</html>

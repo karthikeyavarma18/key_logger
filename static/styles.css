@@ -1,0 +1,79 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:200vh;
+    margin: 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin: 15px 0;
+}
+
+button {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: red;
+    padding: 15px 30px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #45a049, #1b5e20);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 123, 255, 0.2); /* Light translucent blue background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+.log-output {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    width: 100%;
+}
+
+.log-output h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.log-output pre {
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.5;
+}
